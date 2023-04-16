@@ -42,8 +42,9 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
-
+    <packaging>jar</packaging>
     <build>
+        <finalName>app</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
