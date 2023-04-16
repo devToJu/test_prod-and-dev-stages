@@ -10,9 +10,8 @@ import java.util.List;
 public class DbInfoService {
     private final DbInfoRepo dbInfoRepo;
 
-    public String getInfo() {
-        List<DbData> dbData = dbInfoRepo.findAll();
-        return dbData.isEmpty() ? "NIX GEFUNDEN" : dbData.get(0).name();
+    public List<DbData> getInfo() {
+        return dbInfoRepo.findAll();
     }
 
     public DbData addDbData(DbData dbInfo) {
